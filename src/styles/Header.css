@@ -1,0 +1,62 @@
+/* Header/Nav Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;  /* Dark color for light mode */
+    transition: color 0.3s ease;  /* Smooth transition when switching modes */
+  }
+  
+  body.dark-mode .navbar {
+    background-color: #2a2a2a;
+  }
+  
+  body.dark-mode .navbar .logo {
+    color: #f2a365;  /* Lighter peach color for initials in dark mode */
+  }
+  
+  .navbar nav a {
+    margin: 0 15px;
+    font-size: 16px;
+    color: #666;
+    transition: color 0.3s;
+  }
+  
+  .navbar nav a:hover {
+    color: #e27d60;
+  }
+  
+  .dark-mode-toggle {
+    font-size: 18px;
+    background-color: transparent;
+    color: #666;
+    border: 1px solid #666;
+    padding: 8px 12px;
+    border-radius: 50px;
+    transition: all 0.3s;
+  }
+  
+  .dark-mode-toggle:hover {
+    background-color: #e27d60;
+    color: #fff;
+    border-color: #e27d60;
+  }
+  
+  body.dark-mode .dark-mode-toggle {
+    color: #f5f5f5;
+    border-color: #f5f5f5;
+  }
+  
+  body.dark-mode .dark-mode-toggle:hover {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  

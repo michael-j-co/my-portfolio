@@ -1,0 +1,31 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #f5f5f5;  /* Light neutral background */
+  color: #333;  /* Dark text color for readability */
+  line-height: 1.6;
+  transition: all 0.3s ease;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Global Dark Mode (Optional) */
+.dark-mode {
+  background-color: #1f1f1f;
+  color: #f5f5f5;
+}
