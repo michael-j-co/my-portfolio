@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.d24d10b6.css",
+    "main.js": "/my-portfolio/static/js/main.4f9ea600.js",
+    "static/js/453.acca0757.chunk.js": "/my-portfolio/static/js/453.acca0757.chunk.js",
+    "static/media/songswipe-screenshot.png": "/my-portfolio/static/media/songswipe-screenshot.e0e98bdf0b80394f7aa9.png",
+    "static/media/synoodle-screenshot.png": "/my-portfolio/static/media/synoodle-screenshot.c9eca9c42c6243b36a43.png",
+    "index.html": "/my-portfolio/index.html",
+    "main.d24d10b6.css.map": "/my-portfolio/static/css/main.d24d10b6.css.map",
+    "main.4f9ea600.js.map": "/my-portfolio/static/js/main.4f9ea600.js.map",
+    "453.acca0757.chunk.js.map": "/my-portfolio/static/js/453.acca0757.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d24d10b6.css",
+    "static/js/main.4f9ea600.js"
+  ]
+}
