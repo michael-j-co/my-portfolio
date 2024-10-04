@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color: #f5f5f5;  /* Light neutral background */
+  background-color: #ffffff;  /* Light neutral background */
   color: #333;  /* Dark text color for readability */
   line-height: 1.6;
   transition: all 0.3s ease;
@@ -26,6 +26,6 @@ button {
 
 /* Global Dark Mode (Optional) */
 .dark-mode {
-  background-color: #1f1f1f;
+  background-color: #1a1a1a;
   color: #f5f5f5;
 }

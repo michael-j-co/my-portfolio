@@ -1,69 +1,99 @@
-/* Hero Section */
-.hero-section {
-    text-align: center;
-    padding: 120px 20px;
-    background-color: #fff;  /* Light background for normal mode */
-    color: #333;
-    transition: background-color 0.3s, color 0.3s;
+/* General Hero Section */
+.hero {
+  padding-left: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #ffffff;  /* Light mode background */
+  color: #333333;       /* Light mode text color */
+  text-align: center;
+  padding: 1rem 1rem; /* Consistent padding with navbar */
+  box-sizing: border-box;
+  transition: background 0.3s ease, color 0.3s ease;  /* Smooth transition when changing modes */
+}
+
+.hero-content {
+  transform: translateX(12px); /* Adjust the value as needed */
+  max-width: 1200px;    /* Set the same max-width as the navbar */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #1a1a1a;       /* Light mode heading color */
+}
+
+.hero p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: #555555;       /* Light mode paragraph color */
+}
+
+.rotating-text {
+  font-weight: bold;
+  color: #c5a3ff;       /* Lavender color to emphasize the rotating text */
+}
+
+.cursor {
+  font-weight: bold;
+  color: #c5a3ff;       /* Match the rotating text color for consistency */
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
   }
-  
-  .hero-section h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-    font-weight: bold;
+  50% {
+    opacity: 0;
   }
-  
-  .hero-section p {
-    font-size: 18px;
-    margin-bottom: 30px;
-    color: #666;
-  }
-  
-  .cta-button {
-    background-color: #f2a365;
-    color: #fff;
-    padding: 12px 25px;
-    border-radius: 50px;
-    font-size: 16px;
-    transition: background-color 0.3s;
-  }
-  
-  .cta-button:hover {
-    background-color: #e27d60;
-  }
-  
-  /* Availability text */
-  .availability {
-    margin-top: 15px;
-    font-size: 14px;
-    color: #999;
-  }
-  
-  /* Dark Mode Styles */
-  body.dark-mode .hero-section {
-    background-color: #1f1f1f;  /* Dark background */
-    color: #f5f5f5;  /* Light text */
-  }
-  
-  body.dark-mode .hero-section p {
-    color: #ccc;  /* Softer light grey for text */
-  }
-  
-  body.dark-mode .availability {
-    color: #999;
-  }
-  
-  /* Dark mode variation to break up the background */
-  body.dark-mode .hero-section {
-    background-color: #1e1e1e;  /* Slightly lighter dark background */
-  }
-  
-  body.dark-mode .cta-button {
-    background-color: #e27d60;  /* Lighter button for dark mode */
-    color: #fff;
-  }
-  
-  body.dark-mode .cta-button:hover {
-    background-color: #f2a365;
-  }
-  
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #c5a3ff; /* Muted lavender color for light mode */
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.3s ease, transform 0.2s ease; /* Include all properties in transition */
+}
+
+.contact-btn:hover {
+  background-color: #a585e0;
+  transform: translateY(-2px);
+}
+
+/* Dark Mode Styles */
+body.dark-mode .hero {
+  background: #1a1a1a;  /* Dark mode background */
+  color: #e5e5e5;       /* Light text for readability in dark mode */
+}
+
+body.dark-mode .hero h1 {
+  color: #f0f0f0;       /* Lighter color for the heading in dark mode */
+}
+
+body.dark-mode .hero p {
+  color: #e5e5e5;       /* Softer light grey for the paragraph text */
+}
+
+body.dark-mode .rotating-text,
+body.dark-mode .cursor {
+  color: #b589e2;       /* Consistent color in dark mode */
+}
+
+body.dark-mode .contact-btn {
+  background-color: #9b72d3; /* Medium lavender color for dark mode button */
+  color: #ffffff;            /* White text for good contrast */
+}
+
+body.dark-mode .contact-btn:hover {
+  background-color: #b589e2; /* Lighter lavender for hover effect in dark mode */
+}
