@@ -1,25 +1,117 @@
+/* General Styles for Full Page Background */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f9f9f9; /* Light mode background */
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: Arial, sans-serif; /* Apply a consistent font across the page */
+}
+
+/* Dark Mode Full Page Background */
+body.dark-mode {
+  background-color: #1a1a1a; /* Dark mode background */
+  color: #e5e5e5;
+}
+
+/* Contact Section */
 .contact {
-  padding: 4rem 2rem;
-  background-color: var(--background-color);
-  color: var(--text-color);
+  min-height: 100vh; /* Ensure the section takes at least full viewport height */
+  padding: 4rem 1rem;
   text-align: center;
+  background-color: inherit; /* Inherit from body for consistent background */
+  color: inherit; /* Inherit color for consistent styling */
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .contact h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+/* Dark Mode Heading Color Adjustment */
+body.dark-mode .contact h2 {
+  color: #ffffff; /* Set to white for clear contrast in dark mode */
+}
+
+.contact p {
+  font-size: 1.125rem;
   margin-bottom: 2rem;
-  color: var(--accent-color);
+  color: #555555;
 }
 
-.contact a {
-  display: block;
-  font-size: 1.5rem;
-  margin: 1rem 0;
-  color: var(--link-color);
+/* Dark Mode Paragraph Adjustment */
+body.dark-mode .contact p {
+  color: #bbbbbb;
+}
+
+/* Contact Links Container */
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 2rem 0; /* Add padding for spacing consistency */
+}
+
+/* Individual Contact Link Button */
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; /* Center content within the button */
+  padding: 0.75rem 1.5rem;
+  background-color: #c5a3ff; /* Lavender color for light mode */
+  color: #ffffff;
   text-decoration: none;
-  transition: color 0.3s ease-in-out;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  min-width: 150px; /* Set a minimum width to make buttons uniform */
+  text-align: center;
 }
 
-.contact a:hover {
-  color: var(--accent-color);
+.contact-link:hover {
+  background-color: #a585e0; /* Darker lavender on hover */
+  transform: translateY(-3px); /* Lift slightly to indicate interaction */
+}
+
+/* Dark Mode Contact Links */
+body.dark-mode .contact-link {
+  background-color: #9b72d3; /* Darker lavender for dark mode */
+  color: #ffffff;
+}
+
+body.dark-mode .contact-link:hover {
+  background-color: #b589e2; /* Lighter lavender for hover effect in dark mode */
+}
+
+/* Contact Icons */
+.contact-icon {
+  margin-right: 0.5rem;
+  font-size: 1.25rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .contact {
+    padding: 2rem 1rem;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* Dark Mode Contact Section Background */
+body.dark-mode .contact {
+  background-color: #1a1a1a;
+  color: #e5e5e5;
 }

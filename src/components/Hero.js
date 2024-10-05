@@ -10,6 +10,7 @@ const Hero = () => {
     'engineer',
     'mentor',
     'crocheter',
+    'bad but trying home cook',
   ];
 
   const [currentDescriptor, setCurrentDescriptor] = useState('');

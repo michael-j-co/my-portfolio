@@ -1,41 +1,123 @@
+/* General Styles for Full Page Background */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f9f9f9; /* Light mode background */
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: Arial, sans-serif; /* Apply a consistent font across the page */
+}
+
+/* Dark Mode Full Page Background */
+body.dark-mode {
+  background-color: #1a1a1a; /* Dark mode background */
+  color: #e5e5e5;
+}
+
+/* About Section */
 .about {
-    padding: 4rem 2rem;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    text-align: center;
-  }
-  
-  .about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    font-weight: 700;
-    color: var(--accent-color);
-  }
-  
-  .about p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-  }
-  
-  .about ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .about ul li {
-    margin: 1rem 0;
-  }
-  
-  .about ul li a {
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-decoration: none;
-    color: var(--link-color);
-    transition: color 0.3s ease-in-out;
-  }
-  
-  .about ul li a:hover {
-    color: var(--accent-color);
-  }
-  
+  min-height: 100vh; /* Ensure the section takes at least full viewport height */
+  padding: 4rem 1rem;
+  text-align: center;
+  background-color: inherit; /* Inherit from body for consistent background */
+  color: inherit; /* Inherit color for consistent styling */
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #1a1a1a; /* Dark text for light mode */
+}
+
+/* Dark Mode Heading Color Adjustment */
+body.dark-mode .about h2 {
+  color: #f0f0f0; /* Light text for dark mode */
+}
+
+.about p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  color: #555555; /* Grey color for paragraph text in light mode */
+}
+
+/* Dark Mode Paragraph Adjustment */
+body.dark-mode .about p {
+  color: #bbbbbb; /* Lighter grey for paragraph text in dark mode */
+}
+
+/* Hobby List Styling */
+.hobby-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.hobby-item {
+  margin: 1.5rem 0;
+}
+
+.hobby-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  color: #333;
+}
+
+.hobby-link:hover {
+  background-color: #f0f0ff; /* Slight lavender background on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+body.dark-mode .hobby-link {
+  background-color: #2a2a2a;
+  color: #e5e5e5;
+}
+
+body.dark-mode .hobby-link:hover {
+  background-color: #3a3a3a; /* Darker shade on hover */
+}
+
+.hobby-icon {
+  font-size: 2rem;
+  color: #c5a3ff; /* Lavender color to match theme */
+  margin-right: 1rem;
+}
+
+body.dark-mode .hobby-icon {
+  color: #b589e2; /* Adjusted lavender color for dark mode */
+}
+
+.hobby-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.hobby-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: underline; /* Underlined to indicate clickability */
+}
+
+.hobby-subtitle {
+  font-size: 1rem;
+  color: #777777; /* Softer color for subtitles */
+  margin-top: 0.25rem;
+}
+
+body.dark-mode .hobby-subtitle {
+  color: #bbbbbb; /* Light grey for dark mode */
+}

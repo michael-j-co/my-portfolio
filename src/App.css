@@ -5,7 +5,8 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
   font-family: 'Lato', sans-serif;
   background-color: #ffffff;  /* Light neutral background */
   color: #333;  /* Dark text color for readability */

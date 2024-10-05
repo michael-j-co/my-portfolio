@@ -1,72 +1,50 @@
-/* Projects.css */
-
+/* Projects Section */
 .projects {
-  transform: translateX(12px);
-  padding: 4rem 2rem; /* Increased padding to create more space around the projects section */
+  min-height: 100vh; /* Ensure the section takes at least the full viewport height */
+  padding: 4rem 1rem;
   text-align: center;
+  background-color: inherit; /* Inherit from body for consistent background */
+  color: inherit; /* Inherit color for consistent styling */
+  box-sizing: border-box;
+  transform: translateX(12px);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .projects h2 {
-  margin-bottom: 3rem; /* Add a larger gap between the title and project cards */
+  font-size: 2rem; /* Matching the About section */
+  margin-bottom: 3rem; /* Large gap for spacing consistency */
+  font-weight: 700;
+  color: #1a1a1a;
 }
 
+body.dark-mode .projects h2 {
+  color: #ffffff; /* White text for clear contrast in dark mode */
+}
+
+/* Project Cards Container */
 .project-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 2.5rem; /* Increased gap between project cards */
+  gap: 2.5rem; /* Increased gap for consistency with About section */
   justify-content: center;
+  padding: 2rem 0; /* Added padding to give space around the cards */
 }
 
+/* Individual Project Card */
 .project-card {
-  background: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  background: #ffffff; /* White background for cards in light mode */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  border-radius: 8px; /* Consistent rounded corners */
   padding: 1.5rem;
   max-width: 300px;
   width: 100%;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease, color 0.3s ease;
+  color: #333; /* Default text color in light mode */
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.project-image {
-  width: 100%;
-  height: 200px; /* Set a consistent height */
-  object-fit: cover; /* Ensures the image scales nicely within the box */
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
-.project-card h3 {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-}
-
-.project-card p {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  color: #555;
-}
-
-.project-card a {
-  display: inline-block;
-  margin: 0.5rem;
-  text-decoration: none;
-  color: #c5a3ff;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-.project-card a:hover {
-  color: #a585e0;
-}
-
-/* Dark Mode Styles */
-body.dark-mode .projects {
-  color: #e5e5e5;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
 }
 
 body.dark-mode .project-card {
@@ -74,12 +52,49 @@ body.dark-mode .project-card {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow for dark mode */
 }
 
-body.dark-mode .project-card p {
-  color: #cccccc; /* Light grey for the text in dark mode */
+/* Project Image */
+.project-image {
+  width: 100%;
+  height: 200px; /* Consistent height */
+  object-fit: cover; /* Ensures the image scales nicely within the box */
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Project Card Title */
+.project-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a; /* Dark color for light mode */
 }
 
 body.dark-mode .project-card h3 {
-  color: #f0f0f0; /* Lighter color for heading */
+  color: #f0f0f0; /* Lighter color for headings in dark mode */
+}
+
+/* Project Card Description */
+.project-card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #555555; /* Grey color for paragraph text in light mode */
+}
+
+body.dark-mode .project-card p {
+  color: #cccccc; /* Light grey for text in dark mode */
+}
+
+/* Project Links */
+.project-card a {
+  display: inline-block;
+  margin: 0.5rem;
+  text-decoration: none;
+  color: #c5a3ff; /* Lavender color for links in light mode */
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+  color: #a585e0; /* Darker lavender on hover */
 }
 
 body.dark-mode .project-card a {
@@ -88,4 +103,10 @@ body.dark-mode .project-card a {
 
 body.dark-mode .project-card a:hover {
   color: #d1a6f5; /* Even lighter lavender for hover effect in dark mode */
+}
+
+/* Dark Mode for Projects Section */
+body.dark-mode .projects {
+  background-color: #1a1a1a; /* Consistent dark mode background */
+  color: #e5e5e5;
 }

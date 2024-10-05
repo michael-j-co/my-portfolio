@@ -1,0 +1,91 @@
+/* Crochet Section */
+.crochet {
+    padding: 4rem 1rem;
+    text-align: center;
+    background-color: #ffffff;
+    color: #333;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .crochet h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #1a1a1a;
+  }
+  
+  .crochet p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    color: #555555;
+  }
+  
+  .crochet-gallery {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 4rem; /* Add space for visual hints or extra elements */
+    position: relative;
+    overflow: visible;
+  }
+  
+  .crochet-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Set fixed height for consistency */
+  }
+  
+  .crochet-item img {
+    width: 100%;
+    max-width: 250px; /* Limit image size for better preview visibility */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .swiper-slide {
+    opacity: 0.7; /* Make the adjacent slides slightly transparent for focus effect */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .swiper-slide-active {
+    opacity: 1; /* Ensure the active slide is fully visible */
+    transform: scale(1.05); /* Scale up the active slide */
+  }
+  
+  /* Visual hint for carousel navigation */
+  .carousel-hint {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #c5a3ff; /* Lavender color to match theme */
+    font-weight: 500;
+    display: inline-block;
+    animation: fadeInOut 4s ease-in-out infinite; /* Create a subtle animation to draw attention */
+  }
+  
+  /* Animation for visual hint */
+  @keyframes fadeInOut {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  /* Dark Mode Styles */
+  body.dark-mode .crochet {
+    background-color: #1a1a1a;
+    color: #e5e5e5;
+  }
+  
+  body.dark-mode .crochet-item img {
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  body.dark-mode .carousel-hint {
+    color: #b589e2; /* Adjust hint color for dark mode */
+  }
+  

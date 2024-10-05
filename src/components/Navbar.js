@@ -32,7 +32,7 @@ const Navbar = () => {
         </div>
         <ul className={`nav-menu ${menuOpen ? 'open' : ''}`}>
           <li>
-            <NavLink exact to="/" activeClassName="active-link" onClick={() => setMenuOpen(false)}>
+            <NavLink exact to="/my-portfolio" activeClassName="active-link" onClick={() => setMenuOpen(false)}>
               Home
             </NavLink>
           </li>

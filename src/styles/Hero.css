@@ -5,23 +5,23 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #ffffff;  /* Light mode background */
+  background: linear-gradient(135deg, #b9a5cb, #ffffff); /* Light purple gradient for light mode */
   color: #333333;       /* Light mode text color */
   text-align: center;
-  padding: 1rem 1rem; /* Consistent padding with navbar */
+  padding: 1rem 1rem;   /* Consistent padding with navbar */
   box-sizing: border-box;
   transition: background 0.3s ease, color 0.3s ease;  /* Smooth transition when changing modes */
 }
 
 .hero-content {
-  transform: translateX(12px); /* Adjust the value as needed */
+  transform: translateX(11px); /* Adjust the value as needed */
   max-width: 1200px;    /* Set the same max-width as the navbar */
   width: 100%;
   margin: 0 auto;
 }
 
 .hero h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
   font-weight: 700;
   color: #1a1a1a;       /* Light mode heading color */
@@ -72,7 +72,7 @@
 
 /* Dark Mode Styles */
 body.dark-mode .hero {
-  background: #1a1a1a;  /* Dark mode background */
+  background: linear-gradient(135deg, #2e2e2e, #1a1a1a); /* Darker gradient for dark mode */
   color: #e5e5e5;       /* Light text for readability in dark mode */
 }
 
@@ -86,7 +86,7 @@ body.dark-mode .hero p {
 
 body.dark-mode .rotating-text,
 body.dark-mode .cursor {
-  color: #b589e2;       /* Consistent color in dark mode */
+  color: #b589e2;       /* Consistent lavender shade in dark mode */
 }
 
 body.dark-mode .contact-btn {
