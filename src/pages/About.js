@@ -19,13 +19,13 @@ const About = () => {
           </Link>
         </li>
         <li className="hobby-item">
-          <a href="/dance" className="hobby-link">
+          <Link to="/dance" className="hobby-link">
             <FaSignLanguage className="hobby-icon" />
             <div className="hobby-content">
               <span className="hobby-title">Dance</span>
               <span className="hobby-subtitle">Watch the wiggles</span>
             </div>
-          </a>
+          </Link>
         </li>
       </ul>
     </section>
