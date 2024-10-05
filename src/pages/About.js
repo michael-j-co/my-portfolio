@@ -23,7 +23,7 @@ const About = () => {
             <FaSignLanguage className="hobby-icon" />
             <div className="hobby-content">
               <span className="hobby-title">Dance</span>
-              <span className="hobby-subtitle">Watch the wiggle</span>
+              <span className="hobby-subtitle">Watch the wiggles</span>
             </div>
           </a>
         </li>
