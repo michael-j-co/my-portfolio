@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaMoon, FaSun, FaBars } from 'react-icons/fa';
+import { FaMoon, FaSun, FaBars } from 'react-icons/fa'; // Import the hamburger icon
 import '../styles/Navbar.css';
 
 const Navbar = () => {
@@ -29,6 +29,9 @@ const Navbar = () => {
         <div className="logo">
           <NavLink to="/my-portfolio" onClick={() => setMenuOpen(false)}>MC</NavLink>
         </div>
+        <button className="menu-toggle" onClick={toggleMenu}>
+          <FaBars />
+        </button>
         <ul className={`nav-menu ${menuOpen ? 'open' : ''}`}>
           <li>
             <NavLink exact to="/my-portfolio" activeClassName="active-link" onClick={() => setMenuOpen(false)}>
@@ -40,7 +43,6 @@ const Navbar = () => {
               Projects
             </NavLink>
           </li>
-          
           <li>
             <NavLink to="/about" activeClassName="active-link" onClick={() => setMenuOpen(false)}>
               About

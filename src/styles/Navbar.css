@@ -1,4 +1,4 @@
-/* Navbar.css */
+/* Navbar Styles */
 
 /* Default (Light Mode) Navbar */
 .navbar {
@@ -7,6 +7,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
   transition: background 0.3s ease;
+  z-index: 1000; /* Ensure the navbar is above other content */
 }
 
 .navbar-container {
@@ -24,6 +25,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   color: #333;
+  text-decoration: none;
 }
 
 .nav-menu {
@@ -86,10 +88,11 @@
 
 @media (max-width: 768px) {
   .menu-toggle {
-    display: flex;
+    display: flex; /* Show menu toggle on smaller screens */
   }
+
   .nav-menu {
-    display: none;
+    display: none; /* Hide menu by default on smaller screens */
     flex-direction: column;
     gap: 1rem;
     background: #fff;
@@ -98,9 +101,12 @@
     right: 0;
     padding: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1000;
   }
+
   .nav-menu.open {
-    display: flex;
+    display: flex; /* Show the menu when open */
   }
 }
 
@@ -129,104 +135,4 @@ body.dark-mode .menu-toggle {
 
 body.dark-mode .active-link {
   border-bottom: 2px solid #b589e2; /* Light lavender underline for active link in dark mode */
-}
-
-/* Hero.css */
-
-/* General Hero Section */
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: #ffffff;  /* Light mode background */
-  color: #333333;       /* Light mode text color */
-  text-align: center;
-  padding: 1rem 1.5rem; /* Consistent padding with navbar */
-  box-sizing: border-box;
-  transition: background 0.3s ease, color 0.3s ease;  /* Smooth transition when changing modes */
-}
-
-.hero-content {
-  max-width: 1200px;    /* Set the same max-width as the navbar */
-  width: 100%;
-  margin: 0 auto;
-}
-
-.hero h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  font-weight: 700;
-  color: #1a1a1a;       /* Light mode heading color */
-}
-
-.hero p {
-  font-size: 1.125rem;
-  font-weight: 400;
-  margin-bottom: 2rem;
-  color: #555555;       /* Light mode paragraph color */
-}
-
-.rotating-text {
-  font-weight: bold;
-  color: #c5a3ff;       /* Lavender color to emphasize the rotating text */
-}
-
-.cursor {
-  font-weight: bold;
-  color: #c5a3ff;       /* Match the rotating text color for consistency */
-  animation: blink 0.8s infinite;
-}
-
-@keyframes blink {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
-
-.contact-btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background-color: #c5a3ff; /* Muted lavender color for light mode */
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 4px;
-  transition: all 0.3s ease, transform 0.2s ease; /* Include all properties in transition */
-}
-
-.contact-btn:hover {
-  background-color: #a585e0;
-  transform: translateY(-2px);
-}
-
-/* Dark Mode Styles */
-body.dark-mode .hero {
-  background: #1a1a1a;  /* Dark mode background */
-  color: #e5e5e5;       /* Light text for readability in dark mode */
-}
-
-body.dark-mode .hero h1 {
-  color: #f0f0f0;       /* Lighter color for the heading in dark mode */
-}
-
-body.dark-mode .hero p {
-  color: #e5e5e5;       /* Softer light grey for the paragraph text */
-}
-
-body.dark-mode .rotating-text,
-body.dark-mode .cursor {
-  color: #b589e2;       /* Consistent color in dark mode */
-}
-
-body.dark-mode .contact-btn {
-  background-color: #9b72d3; /* Medium lavender color for dark mode button */
-  color: #ffffff;            /* White text for good contrast */
-}
-
-body.dark-mode .contact-btn:hover {
-  background-color: #b589e2; /* Lighter lavender for hover effect in dark mode */
 }
