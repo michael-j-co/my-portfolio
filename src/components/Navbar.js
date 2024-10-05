@@ -27,8 +27,7 @@ const Navbar = () => {
     <nav className={`navbar ${darkMode ? 'navbar-dark' : ''}`}>
       <div className="navbar-container">
         <div className="logo">
-          {/* Replace this with your actual logo */}
-          <NavLink to="/" onClick={() => setMenuOpen(false)}>MC</NavLink>
+          <NavLink to="/my-portfolio" onClick={() => setMenuOpen(false)}>MC</NavLink>
         </div>
         <ul className={`nav-menu ${menuOpen ? 'open' : ''}`}>
           <li>
