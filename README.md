@@ -1,4 +1,4 @@
-# 🌟 [Your Name]'s Personal Portfolio
+# 🌟 Michael Co's Personal Portfolio
 
 Welcome to my personal portfolio repository! This project showcases my skills, projects, and hobbies as a developer.
 
