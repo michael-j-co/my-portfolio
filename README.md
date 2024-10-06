@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# 🌟 [Your Name]'s Personal Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my personal portfolio repository! This project showcases my skills, projects, and hobbies as a developer.
 
-## Available Scripts
+## 🚀 Live Demo
 
-In the project directory, you can run:
+Check out the live version of my portfolio here: [Portfolio URL](https://michael-j-co.github.io/my-portfolio/)
 
-### `npm start`
+## 📋 About
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This is a [React / HTML / CSS] personal portfolio website designed to highlight:
+- Projects I've worked on, with detailed descriptions and links.
+- My hobbies and interests
+- Ways to get in touch with me directly.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This portfolio is intended to serve as a dynamic resume and a demonstration of my work.
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend**: React.js, HTML5, CSS3, JavaScript
+- **Hosting**: [GitHub Pages]
 
-### `npm run build`
+## 🖼️ Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Interactive Project Gallery**: Browse my featured projects, each with details and links to source code or live demos.
+- **About Me**: See what hobbies I'm interested in either thorugh my crochet projet gallery or my dance video archives.
+- **Contact Form**: Links to the various ways to get in touch with me
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Installation and Setup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run this portfolio locally, follow these steps:
 
-### `npm run eject`
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/yourusername/your-portfolio.git
+   ```
+2. **Navigate to the project directory**:
+   ```sh
+   cd your-portfolio
+   ```
+3. **Install dependencies**:
+   ```sh
+   npm install
+   ```
+4. **Run the app**:
+   ```sh
+   npm start
+   ```
+   The application should now be running on [http://localhost:3000](http://localhost:3000).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ✨ Portfolio Highlights
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Featured Projects
+- **SongSwipe**: A React.js app designed to help make playlist curation faster and lots more fun. [(https://songswipe.vercel.app/)].
+- **Synoodle**: Full stack web application inspired by NYT's Wordle and Spelling Bee. [(https://synoodle.vercel.app/)].
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📫 Contact
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+I'm always open to new opportunities and collaboration! Feel free to reach out to me:
 
-## Learn More
+- **Email**: [michaelco@ucla.edu](mailto:michaelco@ucla.edu)
+- **LinkedIn**: [linkedin.com/in/yourprofile](linkedin.com/in/michael-co-b60503296)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📝 License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is licensed under the MIT License. Feel free to use any part of it for your own personal portfolio!
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
