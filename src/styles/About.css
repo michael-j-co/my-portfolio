@@ -20,12 +20,12 @@ body.dark-mode {
 
 /* About Section */
 .about {
-  min-height: 100vh; /* Ensure the section takes at least full viewport height */
-  padding: 4rem 1rem;
+  padding: 0;
   text-align: center;
   background-color: inherit; /* Inherit from body for consistent background */
   color: inherit; /* Inherit color for consistent styling */
   box-sizing: border-box;
+  padding-top: 4rem;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 

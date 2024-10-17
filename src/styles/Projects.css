@@ -1,7 +1,7 @@
 /* Projects Section */
 .projects {
-  min-height: 100vh; /* Ensure the section takes at least the full viewport height */
-  padding: 4rem 1rem;
+  
+  padding-top: 4rem;
   text-align: center;
   background-color: inherit; /* Inherit from body for consistent background */
   color: inherit; /* Inherit color for consistent styling */
@@ -86,7 +86,7 @@ body.dark-mode .project-card p {
 /* Project Links */
 .project-card a {
   display: inline-block;
-  margin: 0.5rem;
+  margin: 0;
   text-decoration: none;
   color: #c5a3ff; /* Lavender color for links in light mode */
   font-weight: 600;

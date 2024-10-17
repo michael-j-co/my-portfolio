@@ -20,7 +20,7 @@ body.dark-mode {
 
 /* Contact Section */
 .contact {
-  min-height: 100vh; /* Ensure the section takes at least full viewport height */
+ 
   padding: 4rem 1rem;
   text-align: center;
   background-color: inherit; /* Inherit from body for consistent background */
