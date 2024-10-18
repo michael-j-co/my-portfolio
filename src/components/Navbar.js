@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaMoon, FaSun, FaBars } from 'react-icons/fa'; // Import the hamburger icon
+import { FaMoon, FaSun, FaBars } from 'react-icons/fa';
+import lightLogo from '../assets/lightmc.png';
+import darkLogo from '../assets/darkmc.png';
 import '../styles/Navbar.css';
 
 const Navbar = () => {
@@ -27,7 +29,13 @@ const Navbar = () => {
     <nav className={`navbar ${darkMode ? 'navbar-dark' : ''}`}>
       <div className="navbar-container">
         <div className="logo">
-          <NavLink to="/my-portfolio" onClick={() => setMenuOpen(false)}>MC</NavLink>
+          <NavLink to="/my-portfolio" onClick={() => setMenuOpen(false)}>
+            <img
+              src={darkMode ? darkLogo : lightLogo}
+              alt="Logo"
+              className="logo-image"
+            />
+          </NavLink>
         </div>
         <button className="menu-toggle" onClick={toggleMenu}>
           <FaBars />
@@ -53,10 +61,21 @@ const Navbar = () => {
               Contact
             </NavLink>
           </li>
+          {/* Dark Mode toggle as text inside dropdown when menu is open */}
+          {menuOpen && (
+            <li className="dark-mode-menu-item">
+              <button onClick={toggleDarkMode} className="dark-mode-menu-button">
+                {darkMode ? 'Light Mode' : 'Dark Mode'}
+              </button>
+            </li>
+          )}
         </ul>
-        <button className="dark-mode-toggle" onClick={toggleDarkMode}>
-          {darkMode ? <FaSun /> : <FaMoon />}
-        </button>
+        {/* Dark Mode icon in the navbar when menu is closed */}
+        {!menuOpen && (
+          <button className="dark-mode-toggle" onClick={toggleDarkMode}>
+            {darkMode ? <FaSun /> : <FaMoon />}
+          </button>
+        )}
       </div>
     </nav>
   );
